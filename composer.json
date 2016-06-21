@@ -23,7 +23,12 @@
     ],
     "autoload": {
         "psr-0": {
-            "Spreadsheet": "./"
+            "Spreadsheet": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Test": "test"
         }
     },
     "description": "More info available on: http://pear.php.net/package/Spreadsheet_Excel_Writer",
@@ -31,15 +36,17 @@
         "./"
     ],
     "license": "LGPL",
-    "name": "pear/spreadsheet_excel_writer",
+    "minimum-stability": "dev",
+    "name": "karsonito/spreadsheet_excel_writer",
     "support": {
         "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Spreadsheet_Excel_Writer",
-        "source": "https://github.com/pear/Spreadsheet_Excel_Writer"
+        "source": "https://github.com/Karsonito/Spreadsheet_Excel_Writer"
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*",
-        "pear/ole": "*"
+        "pear/pear": "*",
+        "pear/ole": "*",
+        "php": ">=5.3.3"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
